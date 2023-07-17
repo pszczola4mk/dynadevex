@@ -6,9 +6,9 @@ import com.slack.api.bolt.jetty.SlackAppServer;
 public class DynaDevExApp {
 
 	public static void main(String[] args) throws Exception {
-		String slack_bot_token = System.getenv("SLACK_BOT_TOKEN");
+		/*String slack_bot_token = System.getenv("SLACK_BOT_TOKEN");
 		String slack_signing_secret = System.getenv("SLACK_SIGNING_SECRET");
-		System.out.println(slack_bot_token + " " + slack_signing_secret);
+		System.out.println(slack_bot_token + " " + slack_signing_secret);*/
 		App app = new App();
 		System.out.println(app.config());
 		app.command("/acc", (req, ctx) -> {
